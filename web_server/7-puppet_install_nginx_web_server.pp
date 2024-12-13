@@ -10,8 +10,8 @@ package { 'nginx':
   require => Exec['apt-get-update'],
 }
 
-file { '/var/www/html/index.html':
-  content => 'Hello World!',
+file { '/usr/share/nginx/html/index.html':
+  content => 'Holberton School',
   require => Package['nginx'],
 }
 
